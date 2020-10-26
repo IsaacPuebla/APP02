@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFEB3B"
+    tools:context=".MenuCon_Act">
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="116dp"
+        android:layout_height="52dp"
+        android:text="MENU"
+        android:textSize="36sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.044" />
+
+    <LinearLayout
+        android:layout_width="370dp"
+        android:layout_height="605dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.487"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.785">
+
+        <TextView
+            android:id="@+id/plan"
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:onClick="Planes"
+            android:text="PLANES"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/mapa"
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:onClick="Mapa"
+            android:text="MAPA"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/tienda"
+            android:layout_width="match_parent"
+            android:layout_height="49dp"
+            android:onClick="Tienda"
+            android:text="TIENDA"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/contacto"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:onClick="Contacto"
+            android:text="CONTACTO"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/video"
+            android:layout_width="match_parent"
+            android:layout_height="43dp"
+            android:onClick="Videos"
+            android:text="VIDEOS"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/datospe"
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:onClick="DatosPe"
+            android:text="DATOS PERSONALES"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/actividad"
+            android:layout_width="match_parent"
+            android:layout_height="43dp"
+            android:onClick="Actividad"
+            android:text="ACTIVIDAD"
+            android:textSize="24sp" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
