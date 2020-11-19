@@ -20,7 +20,7 @@ public class DatosPersonales_act extends AppCompatActivity {
         setContentView(R.layout.activity_datos_personales_act);
 
         nombre=(EditText)findViewById(R.id.editNombre);
-        apellido=(EditText)findViewById(R.id.editApellido);
+        apellido=(EditText)findViewById(R.id.editTelefono);
         telefono=(EditText)findViewById(R.id.editFono);
         direccion=(EditText)findViewById(R.id.editDireccion);
         ciudad=(EditText)findViewById(R.id.editCiudad);

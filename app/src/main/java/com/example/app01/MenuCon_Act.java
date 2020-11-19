@@ -30,10 +30,6 @@ public class MenuCon_Act extends AppCompatActivity {
         Intent i=new Intent(this, Contacto_act.class);
         startActivity(i);
     }
-    public void Videos(View v){
-        Intent i=new Intent(this,Video_Act.class);
-        startActivity(i);
-    }
     public void DatosPe(View v){
         Intent i=new Intent(this,DatosPersonales_act.class);
         startActivity(i);

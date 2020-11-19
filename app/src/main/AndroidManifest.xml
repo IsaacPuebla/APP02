@@ -15,7 +15,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".GestionProductos_act"></activity>
+        <activity android:name=".Detalle_plan"></activity>
+        <activity android:name=".GestionProductos_act" />
         <activity android:name=".GestionClientes_act" />
         <activity android:name=".GestionPlanes_act" />
         <!--
@@ -35,7 +36,6 @@
             android:label="@string/title_activity_mapa_act" />
         <activity android:name=".Actividad_act" />
         <activity android:name=".DatosPersonales_act" />
-        <activity android:name=".Video_Act" />
         <activity android:name=".Contacto_act" />
         <activity android:name=".Tienda_act" />
         <activity android:name=".Planes_act" />

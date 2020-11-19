@@ -22,14 +22,14 @@
 
     <LinearLayout
         android:layout_width="370dp"
-        android:layout_height="605dp"
+        android:layout_height="383dp"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.487"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.785">
+        app:layout_constraintVertical_bias="0.376">
 
         <TextView
             android:id="@+id/plan"
@@ -61,14 +61,6 @@
             android:layout_height="44dp"
             android:onClick="Contacto"
             android:text="CONTACTO"
-            android:textSize="24sp" />
-
-        <TextView
-            android:id="@+id/video"
-            android:layout_width="match_parent"
-            android:layout_height="43dp"
-            android:onClick="Videos"
-            android:text="VIDEOS"
             android:textSize="24sp" />
 
         <TextView

@@ -34,8 +34,6 @@ public class Cuenta_act extends AppCompatActivity {
 
         String Anombre=name.getText().toString();
         String Alastname=lastname.getText().toString();
-        String Adireccion=direction.getText().toString();
-        String Acity=city.getText().toString();
         String Afono=phone.getText().toString();
         String Apass=pass.getText().toString();
         String Arepite=repite.getText().toString();

@@ -31,8 +31,4 @@ public class MenuSin_act extends AppCompatActivity {
         Intent i =new Intent(this,Contacto_act.class);
         startActivity(i);
     }
-    public void Videos(View v){
-        Intent i =new Intent(this,Video_Act.class);
-        startActivity(i);
-    }
 }
