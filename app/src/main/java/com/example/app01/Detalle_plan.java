@@ -2,6 +2,7 @@ package com.example.app01;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.widget.Button;
 import android.widget.TextView;
@@ -18,6 +19,8 @@ public class Detalle_plan extends AppCompatActivity {
 
         vd=findViewById(R.id.videoView);
         tx=findViewById(R.id.TView);
+
+
         btn=findViewById(R.id.btnContratar);
 
 

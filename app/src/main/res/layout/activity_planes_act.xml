@@ -35,14 +35,14 @@
         android:layout_width="142dp"
         android:layout_height="58dp"
         android:layout_marginBottom="24dp"
-        android:onClick="Revisar"
+        android:onClick="Desplegar"
         android:text="revisar"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.486"
+        app:layout_constraintHorizontal_bias="0.46"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/spinner"
-        app:layout_constraintVertical_bias="0.944" />
+        app:layout_constraintVertical_bias="0.959" />
 
     <ListView
         android:id="@+id/listview"
