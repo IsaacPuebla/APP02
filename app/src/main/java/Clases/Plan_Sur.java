@@ -1,12 +1,32 @@
 package Clases;
 
-public class Plan_Sur {
+import java.io.Serializable;
+
+public class Plan_Sur implements Serializable {
     private String Id,Pichilemu,Araucania,ParquesyReservas,LosLagos,LosRios,Chiloe;
-    private Boolean comida;
-    private int precio,dias;
+    private Boolean comidaTrue,comidaFalse;
+    private int precioPichilemu,precioAraucania,precioParques,precioLagos,precioRios,precioChioe;
+    private int diasPichelemu,diasAraucania,diasParques,diasLagos,diasRios,diasChiloe;
+
+    sliders img=new sliders();
 
     public Plan_Sur(){
-
+        precioPichilemu=85000;
+        precioAraucania=90000;
+        precioParques=125000;
+        precioLagos=120000;
+        precioRios=115000;
+        precioChioe=110000;
+        //--------------------
+        diasPichelemu=5;
+        diasAraucania=5;
+        diasParques=6;
+        diasLagos=5;
+        diasRios=5;
+        diasChiloe=5;
+        //--------------------
+        comidaTrue=true;
+        comidaFalse=false;
     }
 
     public String getId() {
@@ -18,86 +38,74 @@ public class Plan_Sur {
     }
 
     public String getPichilemu() {
-        return Pichilemu+"\n"+
-                "Precio: "+precio+"\n"+
-                "Dias: "+dias+"\n"+
-                "Comida: "+comida;
+        return
+                "Precio: "+precioPichilemu+"\n"+
+                "Dias: "+diasPichelemu+"\n"+
+                "Comida: "+comidaFalse;
     }
 
     public void setPichilemu(String pichilemu) {
         Pichilemu = pichilemu;
-        precio=85000;
-        dias=5;
-        comida=false;
+        img.getPichilemu();
     }
 
     public String getAraucania() {
-        return Araucania+"\n"+
-                "Precio: "+precio+"\n"+
-                "Dias: "+dias+"\n"+
-                "Comida: "+comida;
+        return
+                "Precio: "+precioAraucania+"\n"+
+                "Dias: "+diasAraucania+"\n"+
+                "Comida: "+comidaTrue;
     }
 
     public void setAraucania(String araucania) {
         Araucania = araucania;
-        precio=90000;
-        dias=5;
-        comida=true;
+        img.getAraucania();
     }
 
     public String getParquesyReservas() {
-        return ParquesyReservas+"\n"+
-                "Precio: "+precio+"\n"+
-                "Dias: "+dias+"\n"+
-                "Comida: "+comida;
+        return
+                "Precio: "+precioParques+"\n"+
+                "Dias: "+diasParques+"\n"+
+                "Comida: "+comidaTrue;
     }
 
     public void setParquesyReservas(String parquesyReservas) {
         ParquesyReservas = parquesyReservas;
-        precio=125000;
-        dias=6;
-        comida=true;
+        img.getParquesSur();
     }
 
     public String getLosLagos() {
-        return LosLagos+"\n"+
-                "Precio: "+precio+"\n"+
-                "Dias: "+dias+"\n"+
-                "Comida: "+comida;
+        return
+                "Precio: "+precioLagos+"\n"+
+                "Dias: "+diasLagos+"\n"+
+                "Comida: "+comidaTrue;
     }
 
     public void setLosLagos(String losLagos) {
         LosLagos = losLagos;
-        precio=120000;
-        dias=5;
-        comida=true;
+        img.getLagos();
     }
 
     public String getLosRios() {
-        return LosRios+"\n"+
-                "Precio: "+precio+"\n"+
-                "Dias: "+dias+"\n"+
-                "Comida: "+comida;
+        return
+                "Precio: "+precioRios+"\n"+
+                "Dias: "+diasRios+"\n"+
+                "Comida: "+comidaTrue;
     }
 
     public void setLosRios(String losRios) {
         LosRios = losRios;
-        precio=115000;
-        dias=5;
-        comida=true;
+        img.getRios();
     }
 
     public String getChiloe() {
-        return Chiloe+"\n"+
-                "Precio: "+precio+"\n"+
-                "Dias: "+dias+"\n"+
-                "Comida: "+comida;
+        return
+                "Precio: "+precioChioe+"\n"+
+                "Dias: "+diasChiloe+"\n"+
+                "Comida: "+comidaTrue;
     }
 
     public void setChiloe(String chiloe) {
         Chiloe = chiloe;
-        precio=110000;
-        dias=5;
-        comida=true;
+        img.getChiloe();
     }
 }

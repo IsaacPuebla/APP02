@@ -1,12 +1,46 @@
 package Clases;
 
-public class ProductosTienda {
+import java.io.Serializable;
+
+public class ProductosTienda implements Serializable {
     private String Id,Mochila,Bolsos,Gorro,Lentes,Bloqueador,Guantes,Pantalones,Parka,Bufanda,Zapatillas;
-    private int precio,stock;
-    private String codigo;
+    private int precioMochila,precioBolsos,precioGorro,precioLentes,precioBloqueador,precioGuantes,precioPantalones,precioParka,precioBufanda,precioZapatilla;
+    private int stockMochila,stockBolsos,stockGorro,stockLentes,stockBloqueador,stockGuantes,stockPantalones,stockParka,stockBufanda,stockZapatilla;
+    private String codigoMochila,codigoBolsos,codigoGorro,codigoLentes,codigoBloqueador,codigoGuantes,codigoPantalones,codigoParka,codigoBufanda,codigoZapatilla;
 
     public ProductosTienda(){
-
+        precioMochila=15000;
+        precioBolsos=15000;
+        precioGorro=15000;
+        precioLentes=15000;
+        precioBloqueador=15000;
+        precioGuantes=15000;
+        precioPantalones=15000;
+        precioParka=15000;
+        precioBufanda=15000;
+        precioZapatilla=15000;
+        //--------------------
+        stockMochila=20;
+        stockBolsos=25;
+        stockGorro=20;
+        stockLentes=28;
+        stockBloqueador=50;
+        stockGuantes=21;
+        stockPantalones=27;
+        stockParka=20;
+        stockBufanda=40;
+        stockZapatilla=35;
+        //--------------------
+        codigoMochila="QBMHl23";
+        codigoBolsos="QBJBSl55";
+        codigoGorro="QBHGRs98";
+        codigoLentes="QBHLTs55";
+        codigoBloqueador="QBHBLq74";
+        codigoGuantes="QBHGTs12";
+        codigoPantalones="QBHPTl43";
+        codigoParka="QBHPk65";
+        codigoBufanda="QBHBFd46";
+        codigoZapatilla="QBHZPt53";
     }
 
     public String getId() {
@@ -19,141 +53,111 @@ public class ProductosTienda {
 
     public String getMochila() {
         return Mochila+"\n"+
-                "Precio: "+precio+"\n"+
-                "Stock: "+stock+"\n"+
-                "Codigo: "+codigo;
+                "Precio: "+precioMochila+"\n"+
+                "Stock: "+stockMochila+"\n"+
+                "Codigo: "+codigoMochila;
     }
 
     public void setMochila(String mochila) {
         Mochila = mochila;
-        precio=15000;
-        stock=20;
-        codigo="QBMHl23";
     }
 
     public String getBolsos() {
         return Bolsos+"\n"+
-                "Precio: "+precio+"\n"+
-                "Stock: "+stock+"\n"+
-                "Codigo: "+codigo;
+                "Precio: "+precioBolsos+"\n"+
+                "Stock: "+stockBolsos+"\n"+
+                "Codigo: "+codigoBolsos;
     }
 
     public void setBolsos(String bolsos) {
         Bolsos = bolsos;
-        precio=12000;
-        stock=25;
-        codigo="QBJBSl55";
     }
 
     public String getGorro() {
         return Gorro+"\n"+
-                "Precio: "+precio+"\n"+
-                "Stock: "+stock+"\n"+
-                "Codigo: "+codigo;
+                "Precio: "+precioGorro+"\n"+
+                "Stock: "+stockGorro+"\n"+
+                "Codigo: "+codigoGorro;
     }
 
     public void setGorro(String gorro) {
         Gorro = gorro;
-        precio=7500;
-        stock=30;
-        codigo="QBHGRs98";
     }
 
     public String getLentes() {
         return Lentes+"\n"+
-                "Precio: "+precio+"\n"+
-                "Stock: "+stock+"\n"+
-                "Codigo: "+codigo;
+                "Precio: "+precioLentes+"\n"+
+                "Stock: "+stockLentes+"\n"+
+                "Codigo: "+codigoLentes;
     }
 
     public void setLentes(String lentes) {
         Lentes = lentes;
-        precio=7500;
-        stock=24;
-        codigo="QBHLTs55";
     }
 
     public String getBloqueador() {
         return Bloqueador+"\n"+
-                "Precio: "+precio+"\n"+
-                "Stock: "+stock+"\n"+
-                "Codigo: "+codigo;
+                "Precio: "+precioBloqueador+"\n"+
+                "Stock: "+stockBloqueador+"\n"+
+                "Codigo: "+codigoBloqueador;
     }
 
     public void setBloqueador(String bloqueador) {
         Bloqueador = bloqueador;
-        precio=2500;
-        stock=60;
-        codigo="QBHBLq74";
     }
 
     public String getGuantes() {
         return Guantes+"\n"+
-                "Precio: "+precio+"\n"+
-                "Stock: "+stock+"\n"+
-                "Codigo: "+codigo;
+                "Precio: "+precioGuantes+"\n"+
+                "Stock: "+stockGuantes+"\n"+
+                "Codigo: "+codigoGuantes;
     }
 
     public void setGuantes(String guantes) {
         Guantes = guantes;
-        precio=8000;
-        stock=15;
-        codigo="QBHGTs12";
     }
 
     public String getPantalones() {
         return Pantalones+"\n"+
-                "Precio: "+precio+"\n"+
-                "Stock: "+stock+"\n"+
-                "Codigo: "+codigo;
+                "Precio: "+precioPantalones+"\n"+
+                "Stock: "+stockPantalones+"\n"+
+                "Codigo: "+codigoPantalones;
     }
 
     public void setPantalones(String pantalones) {
         Pantalones = pantalones;
-        precio=18500;
-        stock=35;
-        codigo="QBHPTl43";
     }
 
     public String getParka() {
         return Parka+"\n"+
-                "Precio: "+precio+"\n"+
-                "Stock: "+stock+"\n"+
-                "Codigo: "+codigo;
+                "Precio: "+precioParka+"\n"+
+                "Stock: "+stockParka+"\n"+
+                "Codigo: "+codigoParka;
     }
 
     public void setParka(String parka) {
         Parka = parka;
-        precio=31980;
-        stock=29;
-        codigo="QBHPk65";
     }
 
     public String getBufanda() {
         return Bufanda+"\n"+
-                "Precio: "+precio+"\n"+
-                "Stock: "+stock+"\n"+
-                "Codigo: "+codigo;
+                "Precio: "+precioBufanda+"\n"+
+                "Stock: "+stockBufanda+"\n"+
+                "Codigo: "+codigoBufanda;
     }
 
     public void setBufanda(String bufanda) {
         Bufanda = bufanda;
-        precio=5300;
-        stock=25;
-        codigo="QBHBFd46";
     }
 
     public String getZapatillas() {
         return Zapatillas+"\n"+
-                "Precio: "+precio+"\n"+
-                "Stock: "+stock+"\n"+
-                "Codigo: "+codigo;
+                "Precio: "+precioZapatilla+"\n"+
+                "Stock: "+stockZapatilla+"\n"+
+                "Codigo: "+codigoZapatilla;
     }
 
     public void setZapatillas(String zapatillas) {
         Zapatillas = zapatillas;
-        precio=35000;
-        stock=35;
-        codigo="QBHZPt53";
     }
 }

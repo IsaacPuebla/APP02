@@ -1,15 +1,14 @@
 package com.example.app01;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.ContentValues;
 import android.content.Intent;
 import android.database.sqlite.SQLiteDatabase;
-import android.database.sqlite.SQLiteOpenHelper;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.Toast;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 import Clases.ClienteSQL;
 
@@ -20,13 +19,13 @@ public class Cuenta_act extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_cuenta_act);
 
-        name=(EditText)findViewById(R.id.nombre);
-        lastname=(EditText)findViewById(R.id.apellido);
-        direction=(EditText)findViewById(R.id.direccion);
-        city=(EditText)findViewById(R.id.ciudad);
-        phone=(EditText)findViewById(R.id.telefono);
-        pass=(EditText)findViewById(R.id.pass);
-        repite=(EditText)findViewById(R.id.repite);
+        name=findViewById(R.id.nombre);
+        lastname=findViewById(R.id.apellido);
+        direction=findViewById(R.id.direccion);
+        city=findViewById(R.id.ciudad);
+        phone=findViewById(R.id.telefono);
+        pass=findViewById(R.id.pass);
+        repite=findViewById(R.id.repite);
     }
     public void Guardar(View v){
         ClienteSQL agregar=new ClienteSQL(this,"ficheroCliente",null,1);
@@ -49,6 +48,7 @@ public class Cuenta_act extends AppCompatActivity {
                 cont.put("apellido",lastname.getText().toString());
                 cont.put("pass",pass.getText().toString());
                 cont.put("repite",repite.getText().toString());
+
 
                 db.insert("cuenta",null,cont);
                 db.close();

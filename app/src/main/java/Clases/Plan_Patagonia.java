@@ -1,12 +1,32 @@
 package Clases;
 
-public class Plan_Patagonia {
+import java.io.Serializable;
+
+public class Plan_Patagonia implements Serializable {
     private String Id,Patagonia,Antartica,Fiordos,TierradeFuego,ParquesyReservas,CamposdeHielo;
-    private Boolean comida;
-    private int precio,dias;
+    private Boolean comidaTrue,comidaFalse;
+    private int precioPatagonia,precioAntartica,precioFiordos,precioTierra,precioParques,precioCampos;
+    private int diasPatagonia,diasAntartica,diasFiordos,diasTierra,diasParques,diasCampos;
+
+    sliders img=new sliders();
 
     public Plan_Patagonia(){
-
+        precioPatagonia=110000;
+        precioAntartica=160000;
+        precioFiordos=110000;
+        precioTierra=110000;
+        precioParques=110000;
+        precioCampos=120000;
+        //---------------------
+        diasPatagonia=5;
+        diasAntartica=4;
+        diasFiordos=5;
+        diasTierra=4;
+        diasParques=5;
+        diasCampos=4;
+        //---------------------
+        comidaTrue=true;
+        comidaFalse=false;
     }
 
     public String getId() {
@@ -18,86 +38,74 @@ public class Plan_Patagonia {
     }
 
     public String getPatagonia() {
-        return Patagonia+"\n"+
-                "Precio: "+precio+"\n"+
-                "Dias: "+dias+"\n"+
-                "Comida: "+comida;
+        return
+                "Precio: "+precioPatagonia+"\n"+
+                "Dias: "+diasPatagonia+"\n"+
+                "Comida: "+comidaTrue;
     }
 
     public void setPatagonia(String patagonia) {
         Patagonia = patagonia;
-        precio=110000;
-        dias=5;
-        comida=true;
+        img.getPatagonia();
     }
 
     public String getAntartica() {
-        return Antartica+"\n"+
-                "Precio: "+precio+"\n"+
-                "Dias: "+dias+"\n"+
-                "Comida: "+comida;
+        return
+                "Precio: "+precioAntartica+"\n"+
+                "Dias: "+diasAntartica+"\n"+
+                "Comida: "+comidaTrue;
     }
 
     public void setAntartica(String antartica) {
         Antartica = antartica;
-        precio=160000;
-        dias=4;
-        comida=true;
+        img.getAntartica();
     }
 
     public String getFiordos() {
-        return Fiordos+"\n"+
-                "Precio: "+precio+"\n"+
-                "Dias: "+dias+"\n"+
-                "Comida: "+comida;
+        return
+                "Precio: "+precioFiordos+"\n"+
+                "Dias: "+diasFiordos+"\n"+
+                "Comida: "+comidaTrue;
     }
 
     public void setFiordos(String fiordos) {
         Fiordos = fiordos;
-        precio=110000;
-        dias=5;
-        comida=true;
+        img.getFiordos();
     }
 
     public String getTierradeFuego() {
-        return TierradeFuego+"\n"+
-                "Precio: "+precio+"\n"+
-                "Dias: "+dias+"\n"+
-                "Comida: "+comida;
+        return
+                "Precio: "+precioTierra+"\n"+
+                "Dias: "+diasTierra+"\n"+
+                "Comida: "+comidaTrue;
     }
 
     public void setTierradeFuego(String tierradeFuego) {
         TierradeFuego = tierradeFuego;
-        precio=110000;
-        dias=4;
-        comida=true;
+        img.getTierra();
     }
 
     public String getParquesyReservas() {
-        return ParquesyReservas+"\n"+
-                "Precio: "+precio+"\n"+
-                "Dias: "+dias+"\n"+
-                "Comida: "+comida;
+        return
+                "Precio: "+precioParques+"\n"+
+                "Dias: "+diasParques+"\n"+
+                "Comida: "+comidaTrue;
     }
 
     public void setParquesyReservas(String parquesyReservas) {
         ParquesyReservas = parquesyReservas;
-        precio=110000;
-        dias=5;
-        comida=true;
+        img.getParquesPat();
     }
 
     public String getCamposdeHielo() {
-        return CamposdeHielo+"\n"+
-                "Precio: "+precio+"\n"+
-                "Dias: "+dias+"\n"+
-                "Comida: "+comida;
+        return
+                "Precio: "+precioCampos+"\n"+
+                "Dias: "+diasCampos+"\n"+
+                "Comida: "+comidaTrue;
     }
 
     public void setCamposdeHielo(String camposdeHielo) {
         CamposdeHielo = camposdeHielo;
-        precio=120000;
-        dias=4;
-        comida=true;
+        img.getCampos();
     }
 }

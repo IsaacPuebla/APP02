@@ -3,17 +3,29 @@ package com.example.app01;
 import androidx.appcompat.app.AppCompatActivity;
 
 
+import android.content.ClipData;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.Spinner;
+import android.widget.TextView;
 import android.widget.Toast;
+
+import java.util.HashMap;
+import java.util.Map;
+import Clases.PLan_Norte;
+import Clases.Plan_Patagonia;
+import Clases.Plan_Sur;
+import Clases.Plan_Centro;
 
 
 public class Planes_act extends AppCompatActivity {
     private Spinner spin1;
     private ListView lista;
+    private TextView Detalle;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,9 +39,28 @@ public class Planes_act extends AppCompatActivity {
         final ArrayAdapter < String > spinerZona = new ArrayAdapter < String >(getBaseContext(), android.R.layout.simple_list_item_1, zona);
         spin1.setAdapter(spinerZona);
 
+
+
+        lista.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView < ? > parent, View view, int position, long id) {
+
+                PLan_Norte pn=new PLan_Norte();
+                Plan_Centro pc=new Plan_Centro();
+                Plan_Sur ps=new Plan_Sur();
+                Plan_Patagonia pp=new Plan_Patagonia();
+
+                Bundle bun=new Bundle();
+                Intent i=new Intent(getBaseContext(),Detalle_plan.class);
+                startActivity(i);
+                
+            }
+        });
+
     }
 
     public void Desplegar(View v){
+
         String seleccion=spin1.getSelectedItem().toString();
         String Norte[] = {"Arica", "Antofagasta", "La Serena", "Desierto", "salar", "elqui"};
         final ArrayAdapter < String > planNorte = new ArrayAdapter < String >(getBaseContext(), android.R.layout.simple_list_item_1, Norte);

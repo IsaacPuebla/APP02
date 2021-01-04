@@ -1,12 +1,34 @@
 package Clases;
 
-public class PLan_Norte {
+import java.io.Serializable;
+
+public class PLan_Norte implements Serializable{
 
     private String Id,Arica,Antofagasta,LaSerena,Desierto,Salar,Elqui;
-    private int precio,fecha;
-    private Boolean comida;
+    private int precioArica,precioAntofagasta,precioLaSerena,precioDesierto,precioSalar,precioElqui;
+    private int fechaArica,fechaAntofagasta,fechaLaSerena,fechaDesierto,fechaSalar,fechaElqui;
+    private Boolean comidaTrue,comidaFalse;
 
-    public void PLan_Norte(){
+    sliders img=new sliders();
+
+
+    public PLan_Norte(){
+        precioArica=150000;
+        precioAntofagasta=170000;
+        precioLaSerena=110000;
+        precioDesierto=150000;
+        precioSalar=100000;
+        precioElqui=120000;
+        //-------------------
+        fechaArica=5;
+        fechaAntofagasta=6;
+        fechaLaSerena=7;
+        fechaDesierto=5;
+        fechaSalar=4;
+        fechaElqui=5;
+        //-------------------
+        comidaTrue=true;
+        comidaFalse=false;
 
     }
     public String getId() {
@@ -20,87 +42,77 @@ public class PLan_Norte {
 
 
     public String getArica() {
-        return Arica+"\n"+
-                "Precio: "+precio+"\n"+
-                "Dias: "+fecha+"\n"+
-                "Comida: "+comida;
+
+        return
+                "Precio: "+precioArica+"\n"+
+                "Dias: "+fechaArica+"\n"+
+                "Comida: "+comidaTrue;
     }
 
     public void setArica(String arica) {
         Arica = arica;
-        precio=150000;
-        fecha=5;
-        comida=true;
+        img.getArica();
     }
 
     public String getAntofagasta() {
-        return Antofagasta+"\n"+
-                "Precio: "+precio+"\n"+
-                "Dias: "+fecha+"\n"+
-                "Comida: "+comida;
+        return
+                "Precio: "+precioAntofagasta+"\n"+
+                "Dias: "+fechaAntofagasta+"\n"+
+                "Comida: "+comidaTrue;
     }
 
     public void setAntofagasta(String antofagasta) {
         Antofagasta = antofagasta;
-        precio=110000;
-        fecha=6;
-        comida=true;
+        img.getAntofagasta();
     }
 
     public String getLaSerena() {
-        return LaSerena+"\n"+
-                "Precio: "+precio+"\n"+
-                "Dias: "+fecha+"\n"+
-                "Comida: "+comida;
+        return
+                "Precio: "+precioLaSerena+"\n"+
+                "Dias: "+fechaLaSerena+"\n"+
+                "Comida: "+comidaTrue;
     }
 
     public void setLaSerena(String laSerena) {
         LaSerena = laSerena;
-        precio=100000;
-        fecha=7;
-        comida=true;
+        img.getLaSerena();
     }
 
     public String getDesierto() {
-        return "Plan: "+Desierto +"\n"+
-                "Precio: "+precio+"\n"+
-                "Dias: "+fecha+"\n"+
-                "Comida: "+comida;
+        return
+                "Precio: "+precioDesierto+"\n"+
+                "Dias: "+fechaDesierto+"\n"+
+                "Comida: "+comidaTrue;
     }
 
     public void setDesierto(String desierto) {
         Desierto = desierto;
-        precio=150000;
-        fecha=5;
-        comida=true;
+        img.getDesierto();
     }
 
     public String getSalar() {
-        return Salar+"\n"+
-                "Precio: "+precio+"\n"+
-                "Dias: "+fecha+"\n"+
-                "Comida: "+comida;
+        return
+                "Precio: "+precioSalar+"\n"+
+                "Dias: "+fechaSalar+"\n"+
+                "Comida: "+comidaTrue;
     }
 
     public void setSalar(String salar) {
         Salar = salar;
-        precio=100000;
-        fecha=4;
-        comida=true;
+        img.getSalar();
     }
 
     public String getElqui() {
-        return Elqui+"\n"+
-                "Precio: "+precio+"\n"+
-                "Dias: "+fecha+"\n"+
-                "Comida: "+comida;
+        return
+                "Precio: "+precioElqui+"\n"+
+                "Dias: "+fechaElqui+"\n"+
+                "Comida: "+comidaTrue;
 
     }
 
     public void setElqui(String elqui) {
         Elqui = elqui;
-        precio=120000;
-        fecha=5;
-        comida=true;
+        img.getElqui();
+
     }
 }
